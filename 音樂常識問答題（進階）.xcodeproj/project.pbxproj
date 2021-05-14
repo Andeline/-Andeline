@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		577A6436264D2747006E96A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577A6434264D2747006E96A1 /* Main.storyboard */; };
 		577A6438264D2748006E96A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577A6437264D2748006E96A1 /* Assets.xcassets */; };
 		577A643B264D2748006E96A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577A6439264D2748006E96A1 /* LaunchScreen.storyboard */; };
+		577A6444264D2CF5006E96A1 /* jf-openhuninn-1.1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 577A6443264D2CF4006E96A1 /* jf-openhuninn-1.1.ttf */; };
+		577A644B264D7130006E96A1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A644A264D7130006E96A1 /* Question.swift */; };
+		577A6470264D7F3C006E96A1 /* CodableCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 577A646F264D7F3C006E96A1 /* CodableCSV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		577A6437264D2748006E96A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		577A643A264D2748006E96A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		577A643C264D2748006E96A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		577A6443264D2CF4006E96A1 /* jf-openhuninn-1.1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "jf-openhuninn-1.1.ttf"; sourceTree = "<group>"; };
+		577A644A264D7130006E96A1 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				577A6470264D7F3C006E96A1 /* CodableCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,10 +62,12 @@
 		577A642D264D2747006E96A1 /* 音樂常識問答題（進階） */ = {
 			isa = PBXGroup;
 			children = (
+				577A6443264D2CF4006E96A1 /* jf-openhuninn-1.1.ttf */,
 				577A642E264D2747006E96A1 /* AppDelegate.swift */,
 				577A6430264D2747006E96A1 /* SceneDelegate.swift */,
 				577A6432264D2747006E96A1 /* ViewController.swift */,
 				577A6434264D2747006E96A1 /* Main.storyboard */,
+				577A644A264D7130006E96A1 /* Question.swift */,
 				577A6437264D2748006E96A1 /* Assets.xcassets */,
 				577A6439264D2748006E96A1 /* LaunchScreen.storyboard */,
 				577A643C264D2748006E96A1 /* Info.plist */,
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = "音樂常識問答題（進階）";
+			packageProductDependencies = (
+				577A646F264D7F3C006E96A1 /* CodableCSV */,
+			);
 			productName = "音樂常識問答題（進階）";
 			productReference = 577A642B264D2747006E96A1 /* 音樂常識問答題（進階）.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +121,9 @@
 				Base,
 			);
 			mainGroup = 577A6422264D2747006E96A1;
+			packageReferences = (
+				577A646E264D7F3C006E96A1 /* XCRemoteSwiftPackageReference "CodableCSV" */,
+			);
 			productRefGroup = 577A642C264D2747006E96A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				577A643B264D2748006E96A1 /* LaunchScreen.storyboard in Resources */,
+				577A6444264D2CF5006E96A1 /* jf-openhuninn-1.1.ttf in Resources */,
 				577A6438264D2748006E96A1 /* Assets.xcassets in Resources */,
 				577A6436264D2747006E96A1 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				577A6433264D2747006E96A1 /* ViewController.swift in Sources */,
+				577A644B264D7130006E96A1 /* Question.swift in Sources */,
 				577A642F264D2747006E96A1 /* AppDelegate.swift in Sources */,
 				577A6431264D2747006E96A1 /* SceneDelegate.swift in Sources */,
 			);
@@ -341,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		577A646E264D7F3C006E96A1 /* XCRemoteSwiftPackageReference "CodableCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dehesa/CodableCSV.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.6.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		577A646F264D7F3C006E96A1 /* CodableCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 577A646E264D7F3C006E96A1 /* XCRemoteSwiftPackageReference "CodableCSV" */;
+			productName = CodableCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 577A6423264D2747006E96A1 /* Project object */;
 }
